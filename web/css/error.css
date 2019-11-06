@@ -1,0 +1,30 @@
+.container-block {
+    overflow: hidden;
+}
+.src--exceptionContent--nCmgvxD {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+    .src--exceptionContent--nCmgvxD {
+        min-height: 500px;
+    }
+.src--exceptionContent--nCmgvxD .src--imgException--3ZVP47Y {
+    max-width: 260px;
+    margin-right: 50px;
+}
+.src--title--_kuSFDj {
+    color: #333;
+}
+.src--description--1PKuUWM {
+    color: #666;
+}
