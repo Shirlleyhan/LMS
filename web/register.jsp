@@ -63,7 +63,7 @@
                             <span class="next-input-inner next-before">
                         <i test="lock" class="next-icon next-icon-account next-small src--inputIcon--39GsUgc"></i>
                             </span>
-                            <input id="passwd" placeholder="至少8位密码" name="passwd" height="100%" type="password"
+                            <input id="passwd" placeholder="至少6位密码" name="passwd" height="100%" type="password"
                                    autocomplete="off" value="">
                         </span>
                     </div>

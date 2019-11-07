@@ -1,3 +1,5 @@
+package test;
+
 import Dao.IODao;
 import Util.Md5Util;
 

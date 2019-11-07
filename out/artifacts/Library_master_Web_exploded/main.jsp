@@ -63,10 +63,13 @@
 
                 </div>
             </li>
-            <li class="nav-item dropdown" align="right">
-                <a class="nav-link dropdown-toggle" style="font-size:16px" href="" id="navbardrop" data-toggle="dropdown">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="font-size:16px" href=""  data-toggle="dropdown">
                     数据统计
                 </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="IOAction?action=rank">热门书籍</a>
+                </div>
             </li>
             <li class="nav-item dropdown" align="right">
                 <a class="nav-link dropdown-toggle" style="font-size:16px" href="" id="navbardrop" data-toggle="dropdown">
@@ -164,7 +167,7 @@
                                 <p style="text-indent:2em;">
                                     办理读者证请点击此处。本模块包含读者证的办理，读者信息、权限的修改，读者证挂失和注销。
                                 <p align="center">
-                                    <a class="btn btn-primary" href="#">查看详情</a>
+                                    <a class="btn btn-primary" href="ReaderAction?action=GetAllReader">查看详情</a>
                                 </p>
                             </div>
                         </div>
@@ -193,11 +196,11 @@
     width: 33.33333%;
     max-width: 33.33333%;">
                 <h3 style="margin-bottom: 20px;font-weight: 400;font-size: 20px;">关于我们</h3>
-                <div><a class="src--link--1111">私权政策</a><a class="src--link--1111">加入我们</a></div>
+                <div><a class="src--link--1111">私权政策<br></a><a class="src--link--1111">加入我们</a></div>
             </div>
             <div dir="ltr" role="gridcell" class="next-col next-col-l-8">
                 <h3 style="margin-bottom: 20px;font-weight: 400;font-size: 20px;">使用帮助</h3>
-                <div><a class="src--link--1111">联系我们</a><a class="src--link--1111">使用文档</a></div>
+                <div><a class="src--link--1111">联系我们<br></a><a class="src--link--1111">使用文档</a></div>
             </div>
             <div dir="ltr" role="gridcell" class="next-col next-col-l-8">
                 <h3 style="margin-bottom: 20px;font-weight: 400;font-size: 20px;">使用答疑群</h3>

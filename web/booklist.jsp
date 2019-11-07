@@ -26,7 +26,7 @@
     </div>
 <jsp:include page="nav.html"/>
 
-    <div class="hei">
+<div style="height: 1200px">
 <table class="table">
     <thead>
     <tr>
@@ -70,7 +70,7 @@
     %>
     </tbody>
 </table>
-    </div>
+</div>
 
 <jsp:include page="foot.html"/>
 </body>

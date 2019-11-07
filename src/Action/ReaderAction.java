@@ -86,10 +86,13 @@ public class ReaderAction extends HttpServlet {
     }
 
     public void addReader(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String str2 = request.getCharacterEncoding();
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=utf-8");
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        String name = request.getParameter("name");
-        String sex = request.getParameter("sex");
+        String name = new String(request.getParameter("name").getBytes("ISO-8859-1"),"UTF-8");
+        String sex = new String(request.getParameter("sex").getBytes("ISO-8859-1"),"UTF-8");
         int status = 0;
         String mail = request.getParameter("mail");
         int grade = Integer.parseInt(request.getParameter("grade"));

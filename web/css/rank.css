@@ -1,0 +1,41 @@
+.src--item--oaqVjED {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px;
+}
+.src--index--3Ww4jnI {
+    min-width: 22px;
+    height: 22px;
+    margin-right: 10px;
+    padding: 0 4px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #c6c6c6;
+    border: 2px solid #eee;
+    border-radius: 11px;
+}
+.src--keyword--3P326Es {
+    width: 300px;
+
+    font-size: 14px;
+}
+.src--total--19spkRt {
+    width: 40px;
+}
+.src--link--36F4X59, .src--total--19spkRt {
+    padding-left: 10px;
+    font-size: 12px;
+}

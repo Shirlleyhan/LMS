@@ -35,6 +35,7 @@ public class LoginAction extends HttpServlet {
             password = request.getParameter("password");
             remember = request.getParameter("remember");
 
+            String tempPwd = password;
             password = Md5Util.getMD5String(password);
 
             if (remember == null) {
@@ -51,7 +52,7 @@ public class LoginAction extends HttpServlet {
             if (remember != null && remember.equals("yes")) {
                 //新建cookie
                 Cookie cookie1 = new Cookie("username",username);
-                Cookie cookie2 = new Cookie("password",password);
+                Cookie cookie2 = new Cookie("password",tempPwd);
                 // "yes" 勾选了 ==>  设置有效时间为 一周
                 cookie1.setMaxAge(60*60*24*7);
                 cookie2.setMaxAge(60*60*24*7);

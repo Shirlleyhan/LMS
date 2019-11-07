@@ -4,7 +4,10 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1"
          metadata-complete="true">
-
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.jsp</location>
+    </error-page>
     <servlet>
         <servlet-name>LoginAction</servlet-name>
         <servlet-class>Action.LoginAction</servlet-class>
@@ -53,6 +56,8 @@
         <servlet-name>IOAction</servlet-name>
         <url-pattern>/IOAction</url-pattern>
     </servlet-mapping>
+
+
 
 
 </web-app>

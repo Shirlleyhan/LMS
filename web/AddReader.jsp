@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page pageEncoding="utf-8"%>
+<%request.setCharacterEncoding("UTF-8");%>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/addbook.css">
 <script src="${pageContext.request.contextPath}/js/AddScript.js"></script>
@@ -16,6 +17,7 @@
 <html>
 <head>
     <title>读者证办理</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
 <body>
 <div class="black" align="center">
@@ -40,36 +42,52 @@
        session.removeAttribute("msg");
    %>
 <div class="hei">
-<form action="ReaderAction?action=AddReader" <%--onsubmit="return errorsubmit()"--%> method="post">
+<form action="ReaderAction?action=AddReader" method="post">
     <div class="bookinfo">
         <div class="title">
             <span>请输入读者信息</span>
         </div>
         <div>
-            <span class="infotitle">用户名：</span><input type="text" name="username" class="required" id="bookid" onkeyup="bookcheck()"  ><span id="bookidcheck" class="error"></span>
+            <span class="infotitle">读者学号：</span>
+            <input type="text" name="username" class="required" id="bookid"<%--onkeyup="bookcheck()--%>"  >
+            <span id="bookidcheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">密码：</span><input type="password" class="required" name="password"><span id="booknamecheck" class="error"></span>
+            <span class="infotitle">读者密码：</span>
+            <input type="password" class="required" name="password">
+            <span id="booknamecheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">读者姓名：</span><input type="text" class="required" name="name"><span id="bookauthorcheck" class="error"></span>
+            <span class="infotitle">读者姓名：</span>
+            <input type="text" class="required" name="name">
+            <span id="bookauthorcheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">性别：</span><input type="text" class="required" name="sex"><span id="bookpublishercheck" class="error"></span>
+            <span class="infotitle">读者性别：</span>
+            <input type="text" class="required" name="sex">
+            <span id="bookpublishercheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">邮箱：</span><input type="text" class="required" name="mail"><span id="bookpricecheck" class="error"></span>
+            <span class="infotitle">读者邮箱：</span>
+            <input type="text" class="required" name="mail">
+            <span id="bookpricecheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">年级：</span><input type="text" class="required" name="grade"><span id="bookcategorycheck" class="error"></span>
+            <span class="infotitle">读者年级：</span>
+            <input type="text" class="required" name="grade">
+            <span id="bookcategorycheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">班级：</span><input type="text" class="required" name="classnum" ><span id="bookstorecheck" class="error"></span>
+            <span class="infotitle">读者班级：</span>
+            <input type="text" class="required" name="classnum" >
+            <span id="bookstorecheck" class="error"></span>
         </div>
         <div>
-            <span class="infotitle">联系电话：</span><input type="text" class="required" name="tel" ><span id="booklocationcheck" class="error"></span>
+            <span class="infotitle">联系电话：</span>
+            <input type="text" class="required" name="tel" >
+            <span id="booklocationcheck" class="error"></span>
         </div>
-
+        <br>
         <div class="button">
             <button type="submit" class="btn btn-default" name="over" value="1">完成添加</button>
         </div>

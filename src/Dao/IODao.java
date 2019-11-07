@@ -151,6 +151,7 @@ public class IODao extends DBConnect{
         Connection conn = null;
         ResultSet r = null;
         List<Map<String, Integer>> lists = new ArrayList<>();
+        BookDao bookDao = new BookDao();
         try {
             conn = super.getConnection();
             String sql = "select bookid,count(bookid) " +
@@ -166,8 +167,8 @@ public class IODao extends DBConnect{
 
             while (r.next()) {
                 Map<String, Integer> map = new HashMap<>();
-
-                map.put(r.getString(1), r.getInt(2));
+                String name = bookDao.QueryBookById(r.getString(1)).getName();
+                map.put(name, r.getInt(2));
 
                 lists.add(map);
             }

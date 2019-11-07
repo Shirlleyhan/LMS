@@ -2,6 +2,7 @@ package Dao;
 //new
 import Entity.User;
 import Util.DBConnect;
+import Util.TimeId;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,12 +15,13 @@ public class UserDao extends DBConnect{
         int r=0;
         try {
             Connection conn = super.getConnection();
-            String sql = "insert into user (user,password,mail)values (?,?,?)";
+            String sql = "insert into user (user,password,mail,id)values (?,?,?,?)";
             PreparedStatement pst = null;
             pst = conn.prepareStatement(sql);
             pst.setString(1, u.getUsername());
             pst.setString(2, u.getPassword());
             pst.setString(3, u.getMail());
+            pst.setString(4, TimeId.createID());
             r = pst.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();

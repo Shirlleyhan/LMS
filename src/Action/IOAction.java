@@ -74,6 +74,7 @@ public class IOAction extends HttpServlet {
         List<Map<String, Integer>> lists = new ArrayList<>();
 
         lists = ioDao.countBook();
+        request.setAttribute("ranks", lists);
 
         request.getRequestDispatcher("/rank.jsp").forward(request, response);
     }

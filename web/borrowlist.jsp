@@ -23,9 +23,10 @@
 %>
 <body>
 <div class="black" align="center">
-    <img src="./image/head2.png" >
+<img src="./image/head2.png" >
 </div>
 <jsp:include page="nav.html"/>
+<div style="height: 800px">
 <table class="table">
     <thead>
     <tr>
@@ -62,6 +63,9 @@
             }
         }
     %>
-        <jsp:include page="foot.html"/>
+    </table>
+</div>
+<jsp:include page="foot.html"/>
+
 </body>
 </html>

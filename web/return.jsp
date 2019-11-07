@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Creams
-  Date: 2018/1/17
-  Time: 9:29
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/css/returnpage.css">
@@ -22,7 +15,7 @@
 </div>
 <jsp:include page="nav.html"/>
 
-<div class="hei">
+<div style="height: 800px" >
 <div class="returninfo">
     <div class="title">
         请输入读者学号<br>

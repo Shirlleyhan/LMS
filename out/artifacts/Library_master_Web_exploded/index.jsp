@@ -65,7 +65,7 @@
                             <div dir="ltr" role="gridcell" class="next-col">
                                 <%--<span class="next-input next-medium src--input--4Jhht4N">--%>
                                      <input type="password" id="passwordinput" name="password"
-                                            height="50px" maxlength="20" placeholder="   密码" value="<%=password%>"/>
+                                            height="50px" maxlength="20" placeholder="   密码" <%--value="<%=password%>--%>/>
                                 <%--</span>--%>
                             </div>
                             <div dir="ltr" role="gridcell" class="next-col"></div>
